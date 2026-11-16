@@ -1,0 +1,68 @@
+# Finals Week — Presentation Edition. UTF-8.
+START|prologue
+NODE|prologue|Monday / Make a Plan|The final is in three days, and your team still has a project to present. Maya offers to study together. Leo reminds you that sleeping is also part of the plan. How will you spend the time you have?|continue:d0|classroom|Narrator|Monday / Make a Plan
+NODE|d0|Ask the Question|Chen writes an example on the board. You recognize the terms, but one step does not make sense. Maya offers her notes. You can ask for help now or hope it becomes clear later.|normal|classroom|Professor Chen|Monday / Make a Plan
+CHOICE|Ask Chen to explain the missing step|d0r0|knowledge=2,confidence=1|
+CHOICE|Compare notes with Maya|d0r1|knowledge=1,social=2|
+CHOICE|Copy the board and stay quiet|d0r2|energy=1|
+NODE|d0r0|Ask the Question — Your Choice|Chen circles the assumption you missed. Several classmates start writing too. Asking the question helps more people than you expected.|continue:d1|classroom|Professor Chen|Monday / Make a Plan
+NODE|d0r1|Ask the Question — Your Choice|Maya shares a diagram; you explain an example she missed. Studying together feels more useful than struggling in silence.|continue:d1|classroom|Professor Chen|Monday / Make a Plan
+NODE|d0r2|Ask the Question — Your Choice|Your notes look complete, but the missing explanation is still missing. You will have to return to it later.|continue:d1|classroom|Professor Chen|Monday / Make a Plan
+NODE|d1|The Practice Packet|You finally open the practice packet. The first question is harder than expected. You could work through it, review the examples with a classmate, or take a break before starting.|normal|library|You|Monday / Make a Plan
+CHOICE|Attempt the problems independently|d1r0|knowledge=3,energy=-1|
+CHOICE|Review examples with Maya|d1r1|knowledge=2,social=1,confidence=1|
+CHOICE|Take a long break|d1r2|energy=2|
+NODE|d1r0|The Practice Packet — Your Choice|The first attempt goes wrong. The second shows you why. You leave with fewer finished pages, but a much clearer understanding.|continue:d2|library|You|Monday / Make a Plan
+NODE|d1r1|The Practice Packet — Your Choice|Explaining each step to Maya reveals a mistake in your reasoning. Together, you correct it before it becomes a habit.|continue:d2|library|You|Monday / Make a Plan
+NODE|d1r2|The Practice Packet — Your Choice|The walk helps you relax. The packet is still waiting when you return. Rest makes starting easier, but does not replace practice.|continue:d2|library|You|Monday / Make a Plan
+NODE|d2|The Whiteboard Challenge|Maya wipes a corner of the whiteboard. "Teach me without looking," she says. If you have built enough trust, she offers a harder challenge. Otherwise, you can explain the basic solution or practice privately.|normal|library|Maya|Monday / Make a Plan
+CHOICE|Teach the basic solution|d2r0|knowledge=2,confidence=2|
+CHOICE|Try Maya's extension challenge|d2r1|knowledge=4,confidence=2,energy=-1|social=3
+CHOICE|Practice quietly with the answer key|d2r2|knowledge=1,energy=1|
+NODE|d2r0|The Whiteboard Challenge — Your Choice|You lose the thread once, then find it again. Explaining the idea is harder—and more useful—than recognizing it in the answer key.|continue:chapter2|library|Maya|Monday / Make a Plan
+NODE|d2r1|The Whiteboard Challenge — Your Choice|Maya changes one assumption. Your memorized solution stops working, so you rebuild the reasoning together. This time, the idea really clicks.|continue:chapter2|library|Maya|Monday / Make a Plan
+NODE|d2r2|The Whiteboard Challenge — Your Choice|You work at your own pace. One answer becomes clearer; another still needs attention. You mark the difference honestly.|continue:chapter2|library|Maya|Monday / Make a Plan
+NODE|chapter2|Tuesday / Under Pressure|Your preparation is starting to matter. Then Maya gets called into work, and the project presentation is tomorrow. You cannot do everything. Your next choices will shape both the team and your own readiness.|continue:d3|library|Maya|Tuesday / Under Pressure
+NODE|d3|A Teammate Needs Help|Maya cannot make tonight's rehearsal because her shift was extended. She looks exhausted. You can agree on a smaller shared plan, take her work yourself, or keep the original assignments. Each response has a cost.|normal|park|Maya|Tuesday / Under Pressure
+CHOICE|Agree on a smaller shared plan|d3r0|social=3,confidence=1|
+CHOICE|Take her section yourself|d3r1|knowledge=2,social=1,energy=-3|
+CHOICE|Keep the original assignments|d3r2|social=-2,energy=1|
+NODE|d3r0|A Teammate Needs Help — Your Choice|You cut an unnecessary feature and divide the essential work. Maya exhales. The plan is less ambitious, but everyone can actually finish it.|continue:d4|park|Maya|Tuesday / Under Pressure
+NODE|d3r1|A Teammate Needs Help — Your Choice|You learn her section well. You also lose most of your evening. Generosity helps the team, but your energy is limited.|continue:d4|park|Maya|Tuesday / Under Pressure
+NODE|d3r2|A Teammate Needs Help — Your Choice|You protect your evening, but the workload problem remains. Maya grows quiet. Later, the team has to shorten the presentation anyway.|continue:d4|park|Maya|Tuesday / Under Pressure
+NODE|d4|Your Presentation Role|The projector connects. Your game is ready to demonstrate, and Chen is waiting. Leo asks who will open. You can explain the project's purpose, lead the live walkthrough, or help Maya with transitions.|normal|classroom|Leo|Tuesday / Under Pressure
+CHOICE|Introduce the problem and purpose|d4r0|confidence=3|
+CHOICE|Lead the live walkthrough|d4r1|knowledge=2,confidence=2|
+CHOICE|Support Maya and manage transitions|d4r2|social=2,confidence=1|
+NODE|d4r0|Your Presentation Role — Your Choice|You describe a student facing a week of choices. The audience looks up. Once the purpose is clear, the code has somewhere to belong.|continue:d5|classroom|Leo|Tuesday / Under Pressure
+NODE|d4r1|Your Presentation Role — Your Choice|You show a choice, its stat effects, and the next scene. The demonstration is clear because you explain what changes and why.|continue:d5|classroom|Leo|Tuesday / Under Pressure
+NODE|d4r2|Your Presentation Role — Your Choice|You notice when Maya needs a moment. The presentation feels shared rather than divided into separate speeches. The team finishes together.|continue:d5|classroom|Leo|Tuesday / Under Pressure
+NODE|d5|The Night Before|Your bag is packed, but your notes are still open. Leo asks, "Are you learning, or just staying awake?" You can stop and sleep, do one focused review, or keep studying until you feel ready.|normal|bedroom|Leo|Tuesday / Under Pressure
+CHOICE|Set a stopping point and sleep|d5r0|energy=3,confidence=1|
+CHOICE|Do one focused review, then stop|d5r1|knowledge=3,confidence=1,energy=-1|
+CHOICE|Study until you feel ready|d5r2|knowledge=2,energy=-4|
+NODE|d5r0|The Night Before — Your Choice|You write down where to restart, then close the notebook. Tomorrow will have to be lived by someone who has slept.|continue:chapter3|bedroom|Leo|Tuesday / Under Pressure
+NODE|d5r1|The Night Before — Your Choice|You choose one weak topic and finish when the timer rings. The session helps because it has a purpose and an endpoint.|continue:chapter3|bedroom|Leo|Tuesday / Under Pressure
+NODE|d5r2|The Night Before — Your Choice|The worry does not leave on schedule. You keep moving the stopping point, and the night keeps getting shorter.|continue:chapter3|bedroom|Leo|Tuesday / Under Pressure
+NODE|chapter3|Wednesday / The Final|The project demonstration is over. Now it is time for the final. You meet Maya and Leo outside the classroom. A few choices remain, but the habits you built are coming with you.|continue:d6|park|Narrator|Wednesday / The Final
+NODE|d6|Outside the Exam Room|Maya is staring at a flashcard. "I keep thinking about what I should have done differently," she says. You recognize the feeling. You can remind her of her progress, explain one last idea, or settle your own nerves.|normal|park|Maya|Wednesday / The Final
+CHOICE|Remind Maya of what she understands|d6r0|social=2,confidence=1|
+CHOICE|Explain a difficult idea to the group|d6r1|knowledge=2,confidence=1|
+CHOICE|Take a quiet minute alone|d6r2|energy=1,confidence=1|
+NODE|d6r0|Outside the Exam Room — Your Choice|Specific memories help more than "you'll be fine." Maya closes the packet. "One question at a time," she says. The advice helps you too.|continue:d7|park|Maya|Wednesday / The Final
+NODE|d6r1|Outside the Exam Room — Your Choice|You explain the idea aloud and catch one final misunderstanding. Then you put the notes away. There is still time to breathe.|continue:d7|park|Maya|Wednesday / The Final
+NODE|d6r2|Outside the Exam Room — Your Choice|You tell Maya you need a moment. She understands. You decide to read carefully, show your reasoning, and move on when stuck.|continue:d7|park|Maya|Wednesday / The Final
+NODE|d7|The Changed Assumption|The exam question looks like a practice problem—except one condition has changed. You can explain how the new assumption affects the solution, test a small example, or use the method you remember.|normal|classroom|You|Wednesday / The Final
+CHOICE|Explain the changed assumption|d7r0|knowledge=3,confidence=1|knowledge=8
+CHOICE|Test a small example first|d7r1|knowledge=2|
+CHOICE|Use the memorized method immediately|d7r2|confidence=-1|
+NODE|d7r0|The Changed Assumption — Your Choice|You cross out the old assumption and build a solution from the new one. The whiteboard session returns to you. This feels like understanding.|continue:results|classroom|You|Wednesday / The Final
+NODE|d7r1|The Changed Assumption — Your Choice|The small case exposes the difference. You revise your approach and show enough working for someone else to follow.|continue:results|classroom|You|Wednesday / The Final
+NODE|d7r2|The Changed Assumption — Your Choice|Your result contradicts the changed condition. You mark the problem and move on, hoping your other answers will carry the attempt.|continue:results|classroom|You|Wednesday / The Final
+NODE|results|The Results Arrive|The exam is over. A few days later, the result arrives. Your preparation, confidence, energy, and support have shaped how the week ends.|exam|park|Narrator|Epilogue
+CHOICE|Open your results|||
+NODE|honorsEnding|Distinction|PASS WITH DISTINCTION\n\nYou pass with distinction. Chen praises your clear reasoning. The result matters, but so does knowing what helped: honest practice, specific questions, and enough rest to use what you learned. Leo proposes celebrating. This time, you can say yes without worrying about tomorrow.|normal|park|Narrator|Epilogue / Distinction
+NODE|communityEnding|Together|PASS\n\nYou pass. Maya posts "We did it!" in the group chat, and Leo sends the sleepy-cat team logo. Your notes contain their questions; theirs contain your explanations. You agree to keep the study group next semester—with dinner breaks included.|normal|park|Narrator|Epilogue / Together
+NODE|passedEnding|Forward|PASS\n\nYou pass the class. The week was uneven, but you learned to revise a plan and keep going. You save the practice sheet with mistakes you no longer make. Outside, Leo is waiting to celebrate. This time, the deadline is behind you.|normal|park|Narrator|Epilogue / Forward
+NODE|burnoutEnding|Running on Empty|FAIL\n\nYou do not pass this attempt. You knew more than the exam showed, but exhaustion made it difficult to use. Chen helps you plan the next steps. Maya offers support, and Leo makes dinner. Your next plan includes a stopping time you intend to keep.|normal|park|Narrator|Epilogue / Running on Empty
+NODE|failedEnding|Begin Again|FAIL\n\nYou do not pass. The feedback identifies specific gaps, not your entire future. You ask Chen what to rebuild and which options the course allows. Maya offers another study session. You open a fresh page and write one small, concrete next step.|normal|park|Narrator|Epilogue / Begin Again

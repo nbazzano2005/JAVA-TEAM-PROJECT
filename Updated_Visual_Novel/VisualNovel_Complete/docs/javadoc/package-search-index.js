@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"visualnovel.app"},{"l":"visualnovel.controller"},{"l":"visualnovel.media"},{"l":"visualnovel.model"},{"l":"visualnovel.persistence"},{"l":"visualnovel.text"},{"l":"visualnovel.view"}];updateSearchResults();
